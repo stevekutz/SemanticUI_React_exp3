@@ -10,11 +10,11 @@ function MenuNav() {
     <Menu>
         <Menu.Item header>MyFieldTripp</Menu.Item>
         <Menu.Item
-          name='aboutUs'
+          content='aboutUs'
         />
-        <Menu.Item name='jobs' />
+        <Menu.Item content='jobs' />
         <Menu.Item
-          name='locations'
+          content='locations'
         />
       </Menu>
     </div>
