@@ -1,6 +1,7 @@
 import React from 'react';
 import {
-  Menu
+  Menu, 
+  Container,
 } from 'semantic-ui-react'
 
 function MenuNav() {
@@ -8,14 +9,19 @@ function MenuNav() {
   <>
     <div>
     <Menu style = {{display: `flex`, 
-                    border: `1px solid pink`,
-                    justifyContent: `space-evenly`
+                    border: `5px solid black`,
+                    justifyContent: `space-between`
                 }}>
-        <Menu.Item header style = {{justifyContent: `space-between`}}>MyFieldTripp</Menu.Item>
+        <Menu.Item header >MyFieldTripp</Menu.Item>
+        <Container style = {{border: '1px solid orange', display: 'flex', justifyContent: 'flex-end', padding: '0'}}>
             <Menu.Item style = {{border: `5px solid green`}}   content='aboutUs' />
             <Menu.Item content='jobs' />
             <Menu.Item style = {{border: `5px solid green`, margin: `0` }}  content='locations' />
-      </Menu>
+        
+        
+        </Container>    
+        
+        </Menu>
     </div>
   </>
   );
